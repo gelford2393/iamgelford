@@ -1,22 +1,38 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap'); */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;800&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Red+Hat+Display:900&display=swap');
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
 }
-.max-width {
+/* #preloader {background-color: #FFFFFF;bottom: 0;left: 0;position: fixed;right: 0;top: 0;z-index: 2147483647;}
+#status {background-image: url("image/01-Preloader.GIF");background-position: center center;background-repeat: no-repeat;height:50px;
+left: 50%;top: 50%;position: absolute;width:50px;margin: -25px 0 0 -25px;} */
+h1, h2, h3, h4, h5, h6 {text-rendering: optimizeLegibility;font-weight:normal;text-transform: uppercase;-webkit-transition: all 0.3s ease-in-out 0s;
+    -moz-transition: all 0.3s ease-in-out 0s;-o-transition:  all 0.3s ease-in-out 0s;transition: all 0.3s ease-in-out 0s;}
+h1 {font-size: 48px;line-height: 52px;}
+    .max-width {
     max-width: 1300px;
     padding: 0 80px;
     margin: auto;
 }
+h2 {font-size: 32px;line-height: 40px;}
+h3 {font-size: 28px;font-style: italic;line-height: 36px;margin: 4px 0 0;padding: 0;text-align: center;
+    text-transform: none;}
+h4,h5 {
+  font-size: 1.125em; }
+h6 {
+    font-size: 14px;
+   
+    line-height: 50px;
+    padding: 0 15px;
+	color:#fff;
+  }
 .nav-bar {
     position: fixed;
     width: 100%;
-    background-image: 
-    linear-gradient(rgba(255, 255, 255, 0.3), rgba(47, 240, 247, 0.3)),
-    url('/image/photo-1539923779676-1a9bddf986db.jpeg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -24,13 +40,10 @@
     z-index: 1;
     transition: all 0.9s ease;
 }
-.sticky { 
-    padding: 15px 0;
-    background: rgba(65, 135, 145, 0.7);
+.sticky {
+    background: rgba(49, 54, 61, 0.7);
     transition: all 0.9s ease;
     padding-block: 10px;
-
-   
 }
 .nav-bar .max-width {
     display: flex;
@@ -48,14 +61,14 @@
 .nav-bar .max-width .logo a {
     font-size: 30px;
     text-decoration: none;
-    color: #fff;
+    color: #EEEEEE;
     font-family: 'Montserrat', sans-serif;
     font-weight: 800;
     transition: all 0.3s linear;
 }
 .nav-bar ul li a {
     display: block;
-    color: white;
+    color: #EEEEEE;
     padding-inline: 10px;
     text-decoration: none;
     font-size: 20px;  
@@ -65,67 +78,113 @@
     transition: all 0.3s linear;
 }
 .nav-bar li a:hover {
-    color:rgb(136, 72, 72);
+    color:#F8A488;
 }
 .nav-bar .max-width .logo a:hover {
-    color: rgb(136, 72, 72);
+    color: #F8A488;
 }
 .nav-bar .max-width .logo span {
-    color:rgb(13, 69, 77);
+    color:#00ADB5;
 }
 .home {
     display: flex;
-    background-image: 
-    linear-gradient(rgba(255, 255, 255, 0.3), rgba(47, 240, 247, 0.3)),
-    url('image/banner.jpg');
+    /* background-image:  */
+    /* linear-gradient(rgba(255, 255, 255, 0.3), rgba(47, 240, 247, 0.3)), */
+    /* url('image/video.mp4'); */
     height: 100vh;
     background-size: cover;
     background-repeat: no-repeat;
     background-position-x: center;
+    background-position-y: 1vh; 
     min-height: 500px;
     max-height: 720px;
     background-attachment: fixed;
+    justify-content: center;
+    text-align: center;
 }
 .home .home-content{
-    color:  rgb(136, 72, 72);
+    color:  #EEEEEE;
+    margin-bottom: 40px;
+    margin-left: 10px;
 }
-.home .home-content .text-1 {
-    font-size: 25px;
+.home .home-content .fadeInUp1 {
+    font-weight: 600;
+    font-size: 42px;
+    font-family: 'PT Sans',sans-serif;
+}
+.home .home-content .fadeInUp2 {
+    font-weight: 400;
+    font-size: 16px;
+    font-family: 'PT Sans',sans-serif;
+    line-height: 5;
+}
+/* .home .home-content .text-1 {
+    font-size: 30px;
 }
 .home .home-content .text-2 {
-    font-size: 40px;
+    font-size: 60px;
     margin-left: -3px;
     font-weight: 600;
 }
 .home .home-content .text-3 {
-    font-size: 25px;
-}
-.home .home-content a, .skills .skills-content a {
+    font-size: 30px;
+} */
+.home .home-content .smooth-scroll, .skills .skills-content a {
     display: inline-block;
-    font-size: 20px;
-    background-color: rgb(136, 72, 72);
+    font-size: 18px;
+    background-color: #00ADB5;
     color: #fff;
+    font-weight: bold;
     padding: 12px 30px;
     margin-top: 40px;
     border-radius: 20px;
     text-decoration: none;
     transition: all 0.3s linear;
 }
-.home .home-content a:hover, .skills .skills-content a:hover {
-    background-color:  rgb(67, 173, 187);
+.home video { 
+  position:fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
+  height: 150vh;
+  background-attachment: fixed;
+}
+.home .home-content .smooth-scroll:hover, .skills .skills-content a:hover {
+    background-color:  #F8A488;
 }
 .home .max-width {
     margin: auto 30px;
 }
 .about {
     display: flex;
-    margin-block: 50px;
+    background: #fff;
+    height: 100vh;
+    padding-bottom: 50px;
 }
-.about .title {
-    text-align: center;
-    font-size: 30px;
+.about .title{
+    text-align: right;
+    font-size: 60px;
+    text-decoration:overline;
+    font-weight: 600;
     padding: 30px;
-    color:rgb(13, 69, 77)
+    /* color:rgb(13, 69, 77); */
+    /* font-family: 'Red Hat Display'; */
+    background: url(image/pexels-kevin-ku-577585.jpg);
+    background-size: 40%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: rgba(0,0,0,0.08);
+    animation: zoomout 10s ease 500ms forwards infinite;
+}
+@keyframes zoomout {
+    from {
+      background-size: 40%;
+    }
+    to {
+      background-size: 10%;
+    }
 }
 .about .about-content {
      display: flex;
@@ -134,34 +193,37 @@
     justify-content: space-between;
 }
 .about .about-content .column-left {
-    width: 45%;
+    width: 50%;
     display: flex;
     justify-content: center;
+    
 }
 .about .about-content img{
-    height: 300px;
-    width: 300px;
+    height: 400px;
+    width: 400px;
     object-fit: cover;
     border-radius: 55px;
 }
 .about .about-content .column-right {
-    width: 55%; 
+    width: 50%; 
 }
 .about .about-content .column-right p {
     font-size: 20px;
     text-align: justify;
 }
 .about .about-content .column-right h2 {
-    color:rgb(136, 72, 72);
+    color:rgb(13, 69, 77);
+    font-weight: 600;
     margin-block: 10px;
 }
 .services {
     display: flex;
     padding: 20px 70px;
+    height: 100vh;
     margin: 0 auto;
     background-image: 
-    linear-gradient(rgba(255, 255, 255, 0.3), rgba(47, 240, 247, 0.3)),
-    url('image/banner-2.jpg');
+    /* linear-gradient(rgba(255, 255, 255, 0.3), rgba(47, 240, 247, 0.3)), */
+    url('image/pexels-tima-miroshnichenko-5380591.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position-x: center;
@@ -169,15 +231,34 @@
 }
 .services .title {
     text-align: center;
-    font-size: 30px;
-    padding: 30px;
-    color:rgb(136, 72, 72)
+    font-size: 60px;
+    text-decoration:overline;
+    font-weight: 600;
+    margin-bottom: 30px;
+    /* color:rgb(13, 69, 77); */
+    /* font-family: 'Red Hat Display'; */
+    background: url(image/banner-3.jpg);
+    background-size: 40%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: rgba(0,0,0,0.08);
+    animation: zoomout 10s ease 500ms forwards infinite;
 }
+@keyframes zoomout {
+    from {
+      background-size: 40%;
+    }
+    to {
+      background-size: 10%;
+    }
+}
+
 .services .service-content {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
+    
 }
 .services .service-content .card {
     width: calc(33% - 20px);
@@ -185,15 +266,25 @@
     background: white;
     border-radius: 10px;
     padding: 20px;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
+    min-height: 400px;
 }
 .services .service-content .card img {
     height: 60px;
 }
+.services .service-content .card h4 {
+ 
+    font-size: 25px;
+    font-weight: 600;
+}
+.services .service-content .card h5 {
+    font-family:'Courier New', Courier, monospace;
+    font-size: 16px;
+}
 .services .service-content .card .service-text {
     font-weight: 600;
     margin: 10px auto;
-    color:rgb(136, 72, 72)
+    color:rgb(13, 69, 77)
 }
 .services .service-content .card .box {
     transition: all 0.3s ease;
@@ -211,18 +302,21 @@
     text-align: center;
     font-size: 30px;
     padding: 30px;
-    color:rgb(13, 69, 77)
+    color: #F8A488;
+    font-weight: 600;
+
 }
 .skills .skills-content {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
+    color: white;
 }
 .skills .skills-content .left .skills-text {
     font-weight: 600;
     margin: 10px auto;
-    color:rgb(136, 72, 72);
+    color:white;
     font-size: 20px;
 } 
 .skills .skills-content .left p {
@@ -260,7 +354,8 @@
     height: 100%;
     left: 0;
     right: 0;
-    background: rgb(136, 72, 72) ;
+    background: #F8A488;
+    ;
 }
 .skills .skills-content .right .html::before{
     width: 90%;
