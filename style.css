@@ -7,9 +7,9 @@
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
 }
-/* #preloader {background-color: #FFFFFF;bottom: 0;left: 0;position: fixed;right: 0;top: 0;z-index: 2147483647;}
+#preloader {background-color: #FFFFFF;bottom: 0;left: 0;position: fixed;right: 0;top: 0;z-index: 2147483647;}
 #status {background-image: url("image/01-Preloader.GIF");background-position: center center;background-repeat: no-repeat;height:50px;
-left: 50%;top: 50%;position: absolute;width:50px;margin: -25px 0 0 -25px;} */
+left: 50%;top: 50%;position: absolute;width:50px;margin: -25px 0 0 -25px;}
 h1, h2, h3, h4, h5, h6 {text-rendering: optimizeLegibility;font-weight:normal;text-transform: uppercase;-webkit-transition: all 0.3s ease-in-out 0s;
     -moz-transition: all 0.3s ease-in-out 0s;-o-transition:  all 0.3s ease-in-out 0s;transition: all 0.3s ease-in-out 0s;}
 h1 {font-size: 48px;line-height: 52px;}
