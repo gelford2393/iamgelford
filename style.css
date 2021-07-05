@@ -139,8 +139,11 @@ h6 {
     margin-top: 40px;
     border-radius: 20px;
     text-decoration: none;
-    transition: all 0.3s linear;
+    transition: all 0.3s 
+    linear;
+    border: none;
 }
+
 .home video { 
   position:fixed;
   right: 0;
@@ -156,12 +159,16 @@ h6 {
 }
 .home .max-width {
     margin: auto 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 .about {
     display: flex;
     background: #fff;
     /* height: 100vh; */
     padding-bottom: 50px;
+   background-size: cover;
 }
 .about .title{
     text-align: right;
@@ -199,8 +206,8 @@ h6 {
     
 }
 .about .about-content img{
-    height: 400px;
-    width: 400px;
+    height: 350px;
+    width: 350px;
     object-fit: cover;
     border-radius: 55px;
 }
@@ -534,15 +541,16 @@ footer a:hover {
         margin-left: 0;
     }
 }
-@media (max-width: 1104px) {
+@media (min-width: 500) and (max-width: 1104px) {
     .about .about-content .column-left img{
-        height: 350px;
-        width: 350px;
+        height: 250px;
+        width: 250px;
     }
 }
 @media (max-width:991px) {
     .max-width{
-        padding: 0 50px;
+        padding: 0 20px;
+        justify-content: center;
     }
     .nav-bar-menu {
         display: inline-block;
@@ -554,7 +562,8 @@ footer a:hover {
         line-height: 1;
     }
     .home .home-content .fadeInUp2{
-        font-size: 14px;
+        font-size: 24px;
+        line-height: 1;
     }
     .home .home-content .ampersand{
         height: 25px;
@@ -577,6 +586,7 @@ footer a:hover {
     }
     .about .about-content {
         height: 100%;
+        width: 100%;
     }
     .about .about-content .column-left {
         display: flex;
@@ -588,7 +598,7 @@ footer a:hover {
     .about .about-content .column-right {
         flex: 100%;
         justify-content: center;
-        margin: 0 auto 60px;
+        margin: 0 auto 20px;
         width: 100%;
         flex-direction: column;
         height: 100%;
@@ -601,7 +611,7 @@ footer a:hover {
     .contact .contact-content .column,
     footer {
         width: 100%;
-        margin-bottom: 35px;
+        margin-bottom: 10px;
     }
     .skills .skills-content .left .skills-button{
         justify-content: center;
@@ -648,12 +658,15 @@ footer a:hover {
         width: 100%;
     }
     .contact .right form .button {
+        
         justify-content: center;
         margin: 20px auto;
         display: table;
     }
 }
+
 @media (max-width: 500px) {
+
     .contact .right form .form-fields{
         flex-direction: column;
         height: 100%;
@@ -663,8 +676,90 @@ footer a:hover {
     .contact .right form .form-fields .date {
         margin: 0;
     }
-    /* .about .about-content {
-        display: flex;
+    .home .home-content .fadeInUp2{
+        font-size: 12px;
+        line-height: 1;
+    }
+}
+@media (min-width: 300px) and (max-width: 400px) {
+    .max-width{
+        justify-content: center;
+        width: 100%;
+   
+    }
+    .home .home-content .fadeInUp1{
+        font-size: 25px;
+        line-height: 1;
+    }
+    .home .home-content .fadeInUp2{
+        font-size: 8px;
+        line-height: 1;
+    }
+    .home .home-content .ampersand{
+        height: 15px;
+        width: 10px;
+        margin-block-start: 20px;
+    }
+  
+    .nav-bar-menu {
+        display: inline-block;
+    }
+
+    .nav-bar .nav-bar-menu li a{
+        display: inline-block;
+        
+    }
+    
+    .home {
+        justify-content: center;
+        align-content: center;
+        width: 400px;
+        padding: 20px;
+    }
+    .home-content {
+        justify-content: center;
+        align-items: center;
+    }
+    .about {
+        width: 400px;
+        justify-content: center;
+    }
+
+    .about .about-content img {
+        height: 250px;
+        width: 250px;
+    }
+    .about .about-content .column-right {
+        flex: 100%;
+        justify-content: center;
+        margin: 0 20px 20px;
+        width: 75%;
         flex-direction: column;
-    } */
+        height: 100%;
+    }
+    .services {
+        max-width: 100%;
+        justify-content: center;
+        padding: 20px;
+    }
+    .services .title {
+        font-size: 30px;
+        line-height: 1;
+    }
+    .skills  {
+        width: 400px;
+        justify-content: center;
+        align-content: center;
+        padding: 0 auto;
+    }
+    .contact {
+        width: 400px;
+        justify-content: center;
+        padding: 20px;
+    }
+    footer{
+        width: 400px;
+        justify-content: center;
+        padding-inline: 20px;
+    }
 }
