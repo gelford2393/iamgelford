@@ -684,8 +684,7 @@ footer a:hover {
 @media (min-width: 300px) and (max-width: 400px) {
     .max-width{
         justify-content: center;
-        width: 100%;
-   
+        width: 400px;
     }
     .home .home-content .fadeInUp1{
         font-size: 25px;
@@ -738,7 +737,7 @@ footer a:hover {
         height: 100%;
     }
     .services {
-        max-width: 100%;
+        width: 400px;
         justify-content: center;
         padding: 20px;
     }
@@ -749,8 +748,7 @@ footer a:hover {
     .skills  {
         width: 400px;
         justify-content: center;
-        align-content: center;
-        padding: 0 auto;
+        padding: 20px;
     }
     .contact {
         width: 400px;
