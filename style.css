@@ -129,7 +129,7 @@ h6 {
 .home .home-content .text-3 {
     font-size: 30px;
 } */
-.home .home-content .smooth-scroll, .skills .skills-content a {
+.home .home-content .smooth-scroll, .skills .skills-content a, .contact .contact-content .right button {
     display: inline-block;
     font-size: 18px;
     background-color: #00ADB5;
@@ -160,12 +160,12 @@ h6 {
 .about {
     display: flex;
     background: #fff;
-    height: 100vh;
+    /* height: 100vh; */
     padding-bottom: 50px;
 }
 .about .title{
     text-align: right;
-    font-size: 60px;
+    font-size: 42px;
     text-decoration:overline;
     font-weight: 600;
     padding: 30px;
@@ -187,7 +187,7 @@ h6 {
     }
 }
 .about .about-content {
-     display: flex;
+    display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
@@ -219,7 +219,7 @@ h6 {
 .services {
     display: flex;
     padding: 20px 70px;
-    height: 100vh;
+    /* height: 100vh; */
     margin: 0 auto;
     background-image: 
     /* linear-gradient(rgba(255, 255, 255, 0.3), rgba(47, 240, 247, 0.3)), */
@@ -231,8 +231,8 @@ h6 {
 }
 .services .title {
     text-align: center;
-    font-size: 60px;
-    text-decoration:overline;
+    font-size: 42px;
+    text-decoration:underline;
     font-weight: 600;
     margin-bottom: 30px;
     /* color:rgb(13, 69, 77); */
@@ -299,11 +299,19 @@ h6 {
 
 }
 .skills .title {
-    text-align: center;
-    font-size: 30px;
-    padding: 30px;
-    color: #F8A488;
+    text-align: left;
+    font-size: 42px;
+    text-decoration:overline;
     font-weight: 600;
+    padding: 30px;
+    /* color:rgb(13, 69, 77); */
+    /* font-family: 'Red Hat Display'; */
+    background: url(image/pexels-lukas-574073.jpg);
+    background-size: 40%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: rgba(253, 249, 249, 0.164);
+    animation: zoomout 10s ease 500ms forwards infinite;
 
 }
 .skills .skills-content {
@@ -374,9 +382,9 @@ h6 {
 }
 .contact {
     display: flex;
-    padding: 20px 70px;
+    padding: 100px 70px;
     background-image: 
-    linear-gradient(rgba(255, 255, 255, 0.3), rgba(47, 240, 247, 0.3)),
+    linear-gradient(rgba(90, 230, 211, 0.8), rgba(133, 128, 128, 0.8)),
     url('image/banner-3.jpg');
     background-size: cover;
     background-repeat: no-repeat;
@@ -385,15 +393,25 @@ h6 {
 }
 .contact .title {
     text-align: center;
-    font-size: 30px;
+    font-size: 42px;
+    text-decoration:overline;
+    font-weight: 600;
     padding: 30px;
-    color:rgb(13, 69, 77)
+    /* color:rgb(13, 69, 77); */
+    /* font-family: 'Red Hat Display'; */
+    background: url(image/pexels-tima-miroshnichenko-5380591.jpg);
+    background-size: 40%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: rgba(253, 249, 249, 0.158);
+    animation: zoomout 10s ease 500ms forwards infinite;
 }
 .contact .contact-content {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
+    color:#393E46;
 }
 .contact .contact-content .column {
     width: calc(50% - 30px);
@@ -401,7 +419,7 @@ h6 {
 .contact .contact-content .column .text {
     font-weight: 600;
     margin: 10px auto;
-    color:rgb(136, 72, 72);
+    color:#ffffff;
     font-size: 20px;
 }
 .contact .contact-content .row {
@@ -421,7 +439,7 @@ h6 {
     width: 50px;
 }
 .contact .contact-content .info .head {
-    color:rgb(136, 72, 72);
+    color:#ffffff;
     font-weight: 600;
     padding-block: 5px;
 }
@@ -467,29 +485,29 @@ h6 {
 }
 .contact .right form .field input:focus,
 .contact .right form .text-area textarea:focus {
-    border-color: red;
+    border-color: #c23b0e;
 }
 .contact .right form .text-area {
     resize: none;
 }
-.contact .right form .button {
+/* .contact .right form .button {
     height: 50px;
     width: 180px;
     margin-block-start: 10px;
-}
-.contact .right form .button button {
+} */
+/* .contact .right form .button button {
     width: 100%;
     height: 100%;
     font-size: 16px;
-    background-color: rgb(136, 72, 72);
+    background-color: #393E46;
     color: #fff;
     border-radius: 6px;
     transition: all 0.3s linear;
     padding-inline: 20px;
     outline: none;
-}
+} */
 .contact .right form .button button:hover {
-    background-color:  rgb(67, 173, 187);
+    background-color:  #F8A488;
     cursor: pointer;
 }
 
@@ -531,9 +549,18 @@ footer a:hover {
     }
 }
 @media (max-width:947px) {
-    .home .home-content .text-2{
+    .home .home-content .fadeInUp1{
         font-size: 30px;
+        line-height: 1;
     }
+    .home .home-content .fadeInUp2{
+        font-size: 14px;
+    }
+    .home .home-content .ampersand{
+        height: 25px;
+        line-height: 1;
+    }
+
     .home .home-content a {
         font-size: 16px;
         padding: 10px 30px;
@@ -544,14 +571,27 @@ footer a:hover {
     .max-width {
         max-width: 930px;
     }
-
+    .about .title, .service .title, .skills .title, .contact .title {
+       text-align: center;
+       font-size: 30px;
+    }
+    .about .about-content {
+        height: 100%;
+    }
     .about .about-content .column-left {
         display: flex;
         justify-content: center;
         margin: 0 auto 60px;
+        width: 100%;
+  
     }
     .about .about-content .column-right {
         flex: 100%;
+        justify-content: center;
+        margin: 0 auto 60px;
+        width: 100%;
+        flex-direction: column;
+        height: 100%;
     }
     .services .service-content .card {
         width:calc(50% - 10px);
@@ -562,6 +602,11 @@ footer a:hover {
     footer {
         width: 100%;
         margin-bottom: 35px;
+    }
+    .skills .skills-content .left .skills-button{
+        justify-content: center;
+        margin: 20px auto;
+        display: table;
     }
     .nav-bar .nav-bar-menu {
         position: fixed;
@@ -605,6 +650,7 @@ footer a:hover {
     .contact .right form .button {
         justify-content: center;
         margin: 20px auto;
+        display: table;
     }
 }
 @media (max-width: 500px) {
@@ -617,4 +663,8 @@ footer a:hover {
     .contact .right form .form-fields .date {
         margin: 0;
     }
+    /* .about .about-content {
+        display: flex;
+        flex-direction: column;
+    } */
 }
