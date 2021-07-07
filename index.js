@@ -2,17 +2,18 @@
  
 //    console.log('aww');
 // });
-var ut_word_rotator = function() {
-   var ut_rotator_words = [
+
+const wordRotator = function() {
+   var rotatorWords = [
       'I AM GELFORD PENARANDA',
       'I LIKE TO RIDE SCOOTER',
       'I AM A FAN OF ANIME SERIES'
    ] ,
    counter = 0;                
    setInterval(function() {
-   $(".banner-text-rotator").fadeOut(function(){$(this).html(ut_rotator_words[counter=(counter+1)%ut_rotator_words.length]).fadeIn();});}, 4000 );
+   $(".banner-text-rotator").fadeOut(function(){$(this).html(rotatorWords[counter=(counter+1)%rotatorWords.length]).fadeIn();});}, 4000 );
 }
-ut_word_rotator();
+wordRotator();
 let navMenu = $('#nav-menu');
 $(document).ready(function(){
    "use strict"
@@ -39,17 +40,21 @@ $(document).ready(function(){
    $('.nav-bar .nav-bar-menu li a').click(() => {
       $('.nav-bar .nav-bar-menu').removeClass('active');
    });
-   // $('#about').on('inview', function (event, visible) {
-   //    if (visible === true) {
-   //       var container = $("#about .title h1");
-   //       container.shuffleLetters();
-   //    }
-   // });
-   // $('.services').bind('inview', (event, visible) => {
-   //    if (visible) {
-   //       var container = $(".services h2");
-   //       container.shuffleLetters();
-   //    }
-   // });
+   $(window).scroll(function(){
+      if (this.scrollY > 200) {
+         $('.skills .skills-content .right .ofhtml').addClass('html');
+         $('.skills .skills-content .right .ofcss').addClass('css');
+         $('.skills .skills-content .right .ofjs').addClass('js');
+         $('.skills .skills-content .right .ofphp').addClass('php');
+         $('.skills .skills-content .right .ofmysql').addClass('mysql');
+      } else {
+         $('.skills .skills-content .right .ofhtml').removeClass('html');
+         $('.skills .skills-content .right .ofcss').removeClass('css');
+         $('.skills .skills-content .right .ofjs').removeClass('js');
+         $('.skills .skills-content .right .ofphp').removeClass('php');
+         $('.skills .skills-content .right .ofmysql').removeClass('mysql');
+
+      }
+   }); 
  });
 

@@ -359,7 +359,7 @@ h6 {
 .skills .skills-content .right .line {
     height: 5px;
     width: 100%;
-    background: lightseagreen;
+    background: rgb(94, 233, 226);
     position: relative;
 
 }
@@ -370,22 +370,67 @@ h6 {
     left: 0;
     right: 0;
     background: #F8A488;
-    ;
 }
 .skills .skills-content .right .html::before{
     width: 90%;
+    animation: progress-animation-html 5s linear
+}
+@keyframes progress-animation-html {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 90%;
+    }
 }
 .skills .skills-content .right .css::before{
-    width: 85%;
+    width: 90%;
+    animation: progress-animation-css 5s linear
+}
+@keyframes progress-animation-css {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 90%;
+    }
 }
 .skills .skills-content .right .js::before{
     width: 75%;
+    animation: progress-animation-js 5s linear
+}
+@keyframes progress-animation-js {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 75%;
+    }
 }
 .skills .skills-content .right .php::before{
     width: 60%;
+    animation: progress-animation-php 5s linear
+}
+@keyframes progress-animation-php {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 60%;
+    }
 }
 .skills .skills-content .right .mysql::before{
     width: 60%;
+    animation: progress-animation-mysql 5s linear
+
+}
+@keyframes progress-animation-mysql {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 60%;
+    }
 }
 .contact {
     display: flex;
