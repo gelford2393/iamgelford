@@ -41,7 +41,7 @@ $(document).ready(function(){
       $('.nav-bar .nav-bar-menu').removeClass('active');
    });
    $(window).scroll(function(){
-      if (this.scrollY > 200) {
+      if (this.scrollY > 1000) {
          $('.skills .skills-content .right .ofhtml').addClass('html');
          $('.skills .skills-content .right .ofcss').addClass('css');
          $('.skills .skills-content .right .ofjs').addClass('js');
@@ -53,7 +53,6 @@ $(document).ready(function(){
          $('.skills .skills-content .right .ofjs').removeClass('js');
          $('.skills .skills-content .right .ofphp').removeClass('php');
          $('.skills .skills-content .right .ofmysql').removeClass('mysql');
-
       }
    }); 
  });
