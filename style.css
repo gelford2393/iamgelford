@@ -211,13 +211,14 @@ h6 {
     
 }
 .about .about-content img{
-    height: 450px;
-    width: 450px;
+    height: 400px;
+    width: 400px;
     object-fit: cover;
     border-radius: 55px;
 }
 .about .about-content .column-right {
     width: 50%; 
+   
 }
 .about .about-content .column-right p {
     font-size: 20px;
@@ -273,6 +274,7 @@ h6 {
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
+    margin-block: 50px;
     
 }
 .services .service-content .card {
@@ -595,11 +597,36 @@ footer a:hover {
     .home .max-width{ 
         margin-left: 0;
     }
+    .about {
+        height: 700px;
+    }
+    .services .service-content .card {
+        width: calc(33% - 20px);
+        text-align: center;
+        background: white;
+        border-radius: 10px;
+        padding: 20px;
+        margin-bottom: 20px;
+        min-height: 500px;
+    }
 }
-@media (min-width: 500) and (max-width: 1104px) {
-    .about .about-content .column-left img{
-        height: 250px;
-        width: 250px;
+@media (max-width: 1104px) {
+    .about {
+        height: 700px;
+    }
+    .services .service-content .card {
+        width: calc(33% - 20px);
+        text-align: center;
+        background: white;
+        border-radius: 10px;
+        padding: 20px;
+        margin-bottom: 20px;
+        min-height: 500px;
+    }
+    .services .service-content .card h4 {
+ 
+        font-size: 20px;
+        font-weight: 600;
     }
 }
 @media (max-width:991px) {
@@ -714,12 +741,23 @@ footer a:hover {
     
     .services .service-content .card {
         width: 100%;
+        min-height: 300px;
     }
+
     .contact .right form .button {
         
         justify-content: center;
         margin: 20px auto;
         display: table;
+    }
+    .about .about-content img{
+        height: 350px;
+        width: 350px;
+        
+    }
+    .about .about-content .column-right {
+        padding: 20px; 
+        justify-content: center;
     }
 }
 
