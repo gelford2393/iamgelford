@@ -250,7 +250,7 @@ h6 {
     font-size: 42px;
     text-decoration:underline;
     font-weight: 600;
-    margin-bottom: 30px;
+    margin-block: 30px;
     /* color:rgb(13, 69, 77); */
     /* font-family: 'Red Hat Display'; */
     background: url(image/banner-3.jpg);
@@ -284,7 +284,6 @@ h6 {
     border-radius: 10px;
     padding: 20px;
     margin-bottom: 20px;
-    min-height: 400px;
 }
 .services .service-content .card img {
     height: 60px;
@@ -301,7 +300,11 @@ h6 {
 .services .service-content .card .service-text {
     font-weight: 600;
     margin: 10px auto;
-    color:rgb(13, 69, 77)
+    color:rgb(13, 69, 77);
+}
+.services .service-content .card p {
+    line-height: 1.5;
+    text-align: center;
 }
 .services .service-content .card .box {
     transition: all 0.3s ease;
@@ -610,9 +613,18 @@ footer a:hover {
         min-height: 500px;
     }
 }
-@media (max-width: 1104px) {
+@media (min-width: 940px) and (max-width: 1140px) {
     .about {
         height: 700px;
+    }
+    .about .about-content {
+        padding-inline: 20px;
+    }
+    .about .about-content .column-left {
+        padding-right: 20px;
+    }
+    .about .about-content .column-right {
+        padding-left: 20px;
     }
     .services .service-content .card {
         width: calc(33% - 20px);
@@ -687,6 +699,10 @@ footer a:hover {
         width: 100%;
         flex-direction: column;
         height: 100%;
+    }
+    .about .about-content .column-right h2{
+        text-align-last: center;
+        text-decoration: none;
     }
     .services .service-content .card {
         width:calc(50% - 10px);
@@ -777,7 +793,7 @@ footer a:hover {
         line-height: 1;
     }
 }
-@media (min-width: 300px) and (max-width: 400px) {
+@media (max-width: 411px) {
     .max-width{
         justify-content: center;
         width: 400px;
@@ -805,7 +821,7 @@ footer a:hover {
       ;
     }
     .nav-bar .nav-button {
-        padding-right: 30px;
+        padding-right: 10px;
     }
     .nav-bar .logo {
         padding-left: 10px;
@@ -814,7 +830,7 @@ footer a:hover {
     .home {
         justify-content: center;
         align-content: center;
-        width: 380px;
+        width: 411px;
         padding: 20px;
     }
     .home-content {
@@ -822,7 +838,7 @@ footer a:hover {
         align-items: center;
     }
     .about {
-        width: 380px;
+        width: 415px;
         justify-content: center;
     }
 
@@ -833,13 +849,13 @@ footer a:hover {
     .about .about-content .column-right {
         flex: 100%;
         justify-content: center;
-        margin: 0 20px 20px;
+        margin: 0;
         width: 75%;
         flex-direction: column;
         height: 100%;
     }
     .services {
-        width: 380px;
+        width: 415px;
         justify-content: center;
         padding: 20px;
     }
@@ -848,17 +864,164 @@ footer a:hover {
         line-height: 1;
     }
     .skills  {
-        width: 380px;
+        width: 415px;
         justify-content: center;
         padding: 20px;
     }
     .contact {
-        width: 380px;
+        width: 415px;
         justify-content: center;
         padding: 20px;
     }
     footer{
         width: 380px;
+        justify-content: center;
+        padding-inline: 20px;
+    }
+    .skills .skills-content .right .html::before{
+        width: 90%;
+        animation: progress-animation-html 5s linear
+    }
+    @keyframes progress-animation-html {
+        from {
+            width: 0%;
+        }
+        to {
+            width: 90%;
+        }
+    }
+    .skills .skills-content .right .css::before{
+        width: 90%;
+        animation: progress-animation-css 5s linear
+    }
+    @keyframes progress-animation-css {
+        from {
+            width: 0%;
+        }
+        to {
+            width: 90%;
+        }
+    }
+    .skills .skills-content .right .js::before{
+        width: 75%;
+        animation: progress-animation-js 5s linear
+    }
+    @keyframes progress-animation-js {
+        from {
+            width: 0%;
+        }
+        to {
+            width: 75%;
+        }
+    }
+    .skills .skills-content .right .php::before{
+        width: 60%;
+        animation: progress-animation-php 5s linear
+    }
+    @keyframes progress-animation-php {
+        from {
+            width: 0%;
+        }
+        to {
+            width: 60%;
+        }
+    }
+    .skills .skills-content .right .mysql::before{
+        width: 60%;
+        animation: progress-animation-mysql 5s linear
+    
+    }
+    @keyframes progress-animation-mysql {
+        from {
+            width: 0%;
+        }
+        to {
+            width: 60%;
+        }
+    }
+}
+@media (max-width:320px) {
+    .max-width{
+        justify-content: center;
+        width: 320;
+    }
+    .home .home-content .fadeInUp1{
+        font-size: 25px;
+        line-height: 1;
+    }
+    .home .home-content .fadeInUp2{
+        font-size: 8px;
+        line-height: 1;
+    }
+    .home .home-content .ampersand{
+        height: 15px;
+        width: 10px;
+        margin-block-start: 20px;
+    }
+  
+    .nav-bar-menu {
+        display: inline-block;
+    }
+
+    .nav-bar .nav-bar-menu li a{
+        display: inline-block;
+      ;
+    }
+    .nav-bar .nav-button {
+        padding-right: 90px;
+    }
+    .nav-bar .logo {
+        padding-left: 10px;
+    }
+    
+    .home {
+        justify-content: center;
+        align-content: center;
+        width: 320px;
+        padding: 20px;
+    }
+    .home-content {
+        justify-content: center;
+        align-items: center;
+    }
+    .about {
+        width: 320px;
+        justify-content: center;
+    }
+
+    .about .about-content img {
+        height: 250px;
+        width: 250px;
+    }
+    .about .about-content .column-right {
+        flex: 100%;
+        justify-content: center;
+        margin: 0;
+        width: 75%;
+        flex-direction: column;
+        height: 100%;
+    }
+    .services {
+        width: 320px;
+        justify-content: center;
+        padding: 20px;
+    }
+    .services .title {
+        font-size: 30px;
+        line-height: 1;
+    }
+    .skills  {
+        width: 320px;
+        justify-content: center;
+        padding: 20px;
+    }
+    .contact {
+        width: 320px;
+        justify-content: center;
+        padding: 20px;
+    }
+    footer{
+        width: 320px;
         justify-content: center;
         padding-inline: 20px;
     }
